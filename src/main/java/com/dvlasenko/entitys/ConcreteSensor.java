@@ -8,22 +8,10 @@ import java.util.List;
 
 public class ConcreteSensor implements ISensor {
     private double temperature;
-    private double weight;
-    private String color;
-    private List<ISensorObserver> observers = new ArrayList<>();
+    private final List<ISensorObserver> observers = new ArrayList<>();
 
     public void setTemperature(double temperature) {
         this.temperature = temperature;
-        notifySensorObservers();
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-        notifySensorObservers();
-    }
-
-    public void setColor(String color) {
-        this.color = color;
         notifySensorObservers();
     }
 

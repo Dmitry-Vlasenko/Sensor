@@ -3,7 +3,6 @@ package com.dvlasenko.controllers;
 import com.dvlasenko.entitys.ConcreteSensor;
 import com.dvlasenko.entitys.SensorObserver;
 
-
 import java.util.Scanner;
 
 public class SensorControllers {
@@ -26,6 +25,8 @@ public class SensorControllers {
                     break;
                 case 2:
                     System.out.println("Exit");
+                    scanner.close();
+                    sensor.removeSensorObserver(sensorObserver);
                     System.exit(0);
             }
         }

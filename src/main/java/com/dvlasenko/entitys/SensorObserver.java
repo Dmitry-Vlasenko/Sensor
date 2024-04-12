@@ -19,15 +19,15 @@ public class SensorObserver implements ISensorObserver {
         this.color = color;
         this.weight = weight;
     }
-    public SensorObserver getSensorObserver() {
-        return this;
-    }
+
     public double getTemperature() {
         return this.temperature;
     }
+
     public String getColor() {
         return this.color;
     }
+
     public double getWeight() {
         return this.weight;
     }
