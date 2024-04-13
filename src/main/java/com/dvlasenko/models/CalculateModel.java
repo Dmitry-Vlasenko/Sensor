@@ -1,6 +1,6 @@
 package com.dvlasenko.models;
 
-public class Calculate {
+public class CalculateModel {
     public String calculateColor(double temperature) {
         String color = "WHITE";
         if (temperature > 0) {

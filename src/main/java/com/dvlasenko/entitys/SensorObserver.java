@@ -1,7 +1,7 @@
 package com.dvlasenko.entitys;
 
 import com.dvlasenko.interfaces.ISensorObserver;
-import com.dvlasenko.models.Calculate;
+import com.dvlasenko.models.CalculateModel;
 
 public class SensorObserver implements ISensorObserver {
     private double temperature;
@@ -12,7 +12,7 @@ public class SensorObserver implements ISensorObserver {
     }
 
     public void update(double temperature) {
-        Calculate calculate = new Calculate();
+        CalculateModel calculate = new CalculateModel();
         String color = calculate.calculateColor(temperature);
         double weight = calculate.calculateWeight(temperature);
         this.temperature = temperature;

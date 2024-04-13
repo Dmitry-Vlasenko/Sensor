@@ -1,9 +1,9 @@
 package com.dvlasenko;
 
-import com.dvlasenko.controllers.SensorControllers;
+import com.dvlasenko.controllers.sensorControllers;
 
 public class Main {
-    private final SensorControllers App = new SensorControllers();
+    private final sensorControllers App = new sensorControllers();
 
     public static void main(String[] args) {
 

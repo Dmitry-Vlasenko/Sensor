@@ -5,7 +5,7 @@ import com.dvlasenko.entitys.SensorObserver;
 
 import java.util.Scanner;
 
-public class SensorControllers {
+public class sensorControllers {
     public void sensorProcessing() {
         Scanner scanner = new Scanner(System.in);
         ConcreteSensor sensor = new ConcreteSensor();
